@@ -573,6 +573,12 @@ grunt.initConfig({
                 remote: 'openshift',
                 branch: 'master'
             }
+        },
+        github: {
+          options: {
+            remote: 'https://github.com/chasefarmer2808/chasefarmer.git',
+            branch: 'build'
+          }
         }
     }
 });
@@ -592,4 +598,11 @@ gulp.task('buildcontrol:openshift', function(done) {
         {gruntfile: false}, //don't look for a Gruntfile - there is none. :-)
         function() {done();}
     );
+});
+gulp.task('buildcontrol:github', function(done) {
+  grunt.tasks(
+    ['buildcontrol:github'],
+    {gruntfile: false},
+    function() {done();}
+  );
 });
