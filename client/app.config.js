@@ -11,7 +11,9 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('main', {
       url: '/',
-      templateUrl: 'components/main/main.html'
+      templateUrl: 'components/main/main.html',
+      controller: 'MainController',
+      controllerAs: 'vm'
     });
 
   $locationProvider.html5Mode(true);
