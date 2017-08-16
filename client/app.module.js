@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('chasefarmer', [
-  'main'
+  'main',
+  'ui.router'
 ]);
