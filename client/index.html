@@ -1,15 +1,17 @@
 <!doctype html>
-<html ng-app>
+<html lan="en" ng-app="chasefarmer">
   <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chase Farmer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="components/main/main.module.js"></script>
+    <script src-"components/main/main.controller.js"></script>
   </head>
   <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
     </div>
   </body>
 </html>
