@@ -18,3 +18,21 @@ body {
   width: 250px;
   background-color: green;
 }
+
+.profile-container {
+  padding-top: 16px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  margin-top: -16px;
+}
