@@ -124,3 +124,7 @@ nav-bar {
 .nav-button:hover {
   background-color: gray;
 }
+
+.active {
+  background-color: gray;
+}
