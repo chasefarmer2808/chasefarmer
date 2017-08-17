@@ -16,11 +16,12 @@ body {
 .sidebar-container {
   height: 100%;
   width: 250px;
-  background-color: green;
+  border-right: 1px solid gray;
 }
 
 .profile-container {
   padding-top: 16px;
+  border-bottom: 1px solid gray;
 }
 
 .profile-picture {
@@ -35,4 +36,46 @@ body {
   width: 100%;
   height: auto;
   margin-top: -16px;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.links-container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.link {
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link-link:hover {
+  color: black;
+}
+
+.link-icon {
+  margin-right: 16px;
+  font-size: 40px;
+}
+
+.link-icon i {
+}
+
+.link-text{
+  font-size: 32px;
+  padding-top: 4px;
 }
