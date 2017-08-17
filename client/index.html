@@ -18,12 +18,17 @@
     <script type="text/javascript" src="components/main/main.module.js"></script>
     <script type="text/javascript" src="components/main/main.controller.js"></script>
     <script type="text/javascript" src="components/sidebar/sidebar.directive.js"></script>
+    <script type="text/javascript" src="components/navbar/navbar.directive.js"></script>
+
     <base href="/"></base>
   </head>
   <body  ng-app="chasefarmer">
     <div class="view-container">
       <side-bar></side-bar>
-      <div ui-view class="view-frame"></div>
+      <div class="components-container">
+        <nav-bar></nav-bar>
+        <div ui-view class="view-frame"></div>
+      </div>
     </div>
   </body>
 </html>

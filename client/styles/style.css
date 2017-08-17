@@ -5,6 +5,7 @@ html {
 body {
   margin-top: 0;
   margin-left: 0;
+  margin-right: 0;
   height: 100%;
 }
 
@@ -78,4 +79,29 @@ body {
 .link-text{
   font-size: 32px;
   padding-top: 4px;
+}
+
+.components-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav-bar {
+}
+
+.navbar-container {
+  border: 1px solid grey;
+}
+
+.nav-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-button {
+  display: inline-block;
 }

@@ -19,16 +19,4 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 }
 
-/*
-  function config($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'main/main.html',
-        controller: 'main/main.controller.js',
-        controllerAs: 'vm'
-      });
-
-    $locationProvider.html5Mode(true);
-  };
-*/
 })();
