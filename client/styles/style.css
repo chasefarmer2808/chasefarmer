@@ -12,6 +12,7 @@ body {
 }
 
 .view-frame {
+  height: 100%;
 }
 
 .view-frame.ng-enter {
@@ -149,4 +150,14 @@ nav-bar {
 
 .active {
   background-color: gray;
+}
+
+.content-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
+  height: 75%;
+  background-color: #2c3e50;
+  opacity: .75;
 }
