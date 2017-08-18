@@ -21,6 +21,7 @@
   "homepage": "https://github.com/chasefarmer2808/chasefarmer#readme",
   "dependencies": {
     "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
     "express": "^4.15.4",
     "morgan": "^1.8.2",
     "path": "^0.12.7",

@@ -5,5 +5,6 @@ angular.module('chasefarmer', [
   'experiance',
   'skills',
   'involvement',
-  'ui.router'
+  'ui.router',
+  'ngAnimate'
 ]);
