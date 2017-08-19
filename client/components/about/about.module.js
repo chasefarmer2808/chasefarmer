@@ -1,5 +1,5 @@
 (function() {
   'use strict';
 
-  angular.module('about', []);
+  angular.module('about', ['ngAnimate']);
 })();

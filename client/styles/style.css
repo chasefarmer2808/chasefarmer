@@ -14,7 +14,7 @@ body {
 .view-frame {
   height: 100%;
 }
-
+/*
 .view-frame.ng-enter {
   transition: 0.5s linear all;
   opacity: 0;
@@ -23,7 +23,7 @@ body {
 .view-frame.ng-enter.ng-enter-active {
   opacity: 1;
 }
-
+*/
 .view-container {
   display: flex;
   height: 100%;
@@ -32,13 +32,12 @@ body {
 .sidebar-container {
   height: 100%;
   width: 250px;
-  border-right: 1px solid #2c3e50;
 }
 
 .profile-container {
+  margin: 16px;
   padding-top: 16px;
-  border-bottom: 1px solid #2c3e50;
-  background-color: #2c3e50;
+  background-color: rgba(44,62,80, 0.8);
 }
 
 .profile-picture {
@@ -72,9 +71,11 @@ body {
 
 .links-container {
   text-align: center;
+  padding-top: 32px;
+  padding-left: 32px;
+  margin: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 32px;
-  margin-left: 32px;
+  background-color: rgba(44,62,80, 0.8);
 }
 
 .link {
@@ -86,10 +87,11 @@ body {
 .link-link {
   color: white;
   text-decoration: none;
+  transition: color .3s;
 }
 
 .link-link:hover {
-  color: #2c3e50;
+  color: #008ac8;
 }
 
 .link-icon {
@@ -115,7 +117,9 @@ nav-bar {
 }
 
 .navbar-container {
-  background-color: #2c3e50;
+  background-color: rgba(44,62,80, 0.8);
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .nav-buttons-container {
@@ -131,7 +135,6 @@ nav-bar {
   cursor: pointer;
   float: left;
   width: 100%;
-  transition: background-color .3s;
 }
 
 .nav-button a {
@@ -142,22 +145,45 @@ nav-bar {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: white;
+  transition: color .3s;
 }
 
-.nav-button:hover {
-  background-color: gray;
+.nav-button a:hover {
+  color: #008ac8;
 }
 
 .active {
-  background-color: gray;
+  color: #008ac8 !important;
 }
 
-.content-container {
+.content-outer-container {
   margin-top: 32px;
   margin-bottom: 32px;
   margin-right: 16px;
   margin-left: 16px;
   height: 75%;
-  background-color: #2c3e50;
-  opacity: .75;
+  background-color: rgba(44,62,80, 0.8);
+}
+
+.content-inner-container {
+  margin-left: 32px;
+  margin-right: 32px;
+  border: 2px solid #008ac8;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(44,62,80);
+}
+
+.content-inner-container.ng-enter {
+  transition: all linear 0.5s;
+  opacity: 0
+}
+
+.content-inner-container.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.content-container-content {
+  color: white;
 }

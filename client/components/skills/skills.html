@@ -1,3 +1,5 @@
-<div class="content-container">
-  <p>{{vm.test}}</p>
+<div class="content-outer-container">
+  <div ng-view class="content-inner-container">
+    <p class="content-container-content">{{vm.test}}</p>
+  </div>
 </div>
