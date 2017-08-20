@@ -8,6 +8,38 @@
   function ExperianceController() {
     var vm = this;
 
-    vm.test = 'experiance view';
+    vm.test = 'experiencesnce view';
+
+    vm.experiences = [
+      {
+        company: 'Ultimate Software',
+        location: 'Weston, Florida',
+        position: 'Software Engineering Intern',
+        duration: {
+          start: 'May, 2017',
+          end: 'August, 2017'
+        },
+        bullets: [
+          'Added features and refactored web based planning dashboard.',
+          'Learned microservice principles and tools like Eurika and event sourcing.',
+          'Wrote server and db maintenance scripts that ran weekly.',
+          'Wrote unit and functional tests for several company products.'
+        ]
+      },
+      {
+        company: 'Dycom Industries',
+        location: 'Palm Gardens, Florida',
+        position: 'Software Engineering Intern',
+        duration: {
+          start: 'May, 2016',
+          end: 'August, 2016'
+        },
+        bullets: [
+          'Developed web based metrics dashboard from scratch.',
+          'Aggregated data from SQL databases into a Mongo database.',
+          'Displayed data in several chart types using D3JS.'
+        ]
+      }
+    ];
   };
 })();

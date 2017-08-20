@@ -174,13 +174,17 @@ nav-bar {
   background-color: rgba(44,62,80, 0.8);
 }
 
-.content-inner-container {
-  margin-left: 32px;
-  margin-right: 32px;
-  border: 2px solid #008ac8;
+.content-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.content-inner-container {
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: 2px solid #008ac8;
   background-color: rgb(44,62,80);
 }
 
@@ -206,4 +210,17 @@ nav-bar {
 
 .container-shadow {
   box-shadow: 4px 4px 4px #555;
+}
+
+.experiance-container-content {
+  padding: 16px;
+}
+
+.experiance-list {
+  color: white;
+}
+
+.experiance-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid white;
 }

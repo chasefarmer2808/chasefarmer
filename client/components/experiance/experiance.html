@@ -1,3 +1,11 @@
 <div class="content-inner-container">
-  <p class="content-container-content">{{vm.test}}</p>
+  <div class="experiance-container-content content-container-content">
+    <div class="experiance-list">
+      <div ng-repeat="exp in vm.experiences" class="experiance-item">
+        <div class="exp-position">{{exp.position}}</div>
+        <div class="exp-company">{{exp.company}}</div>
+        <div class="exp-location">{{exp.location}}</div>
+      </div>
+    </div>
+  </div>
 </div>
