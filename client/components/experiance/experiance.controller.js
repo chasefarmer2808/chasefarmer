@@ -29,6 +29,7 @@
       },
       {
         company: 'Dycom Industries',
+        link: 'http://www.dycomind.com/',
         location: 'Palm Gardens, Florida',
         position: 'Software Engineering Intern',
         duration: {
@@ -43,6 +44,7 @@
       },
       {
         company: 'GeniusCentral',
+        link: 'http://www.geniuscentral.com/',
         location: 'St. Petersburg, Florida',
         position: 'Software Engineering Intern',
         duration: {
