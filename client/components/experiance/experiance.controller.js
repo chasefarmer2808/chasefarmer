@@ -13,6 +13,7 @@
     vm.experiences = [
       {
         company: 'Ultimate Software',
+        link: 'http://www.ultimatesoftware.com/',
         location: 'Weston, Florida',
         position: 'Software Engineering Intern',
         duration: {
@@ -38,6 +39,19 @@
           'Developed web based metrics dashboard from scratch.',
           'Aggregated data from SQL databases into a Mongo database.',
           'Displayed data in several chart types using D3JS.'
+        ]
+      },
+      {
+        company: 'GeniusCentral',
+        location: 'St. Petersburg, Florida',
+        position: 'Software Engineering Intern',
+        duration: {
+          start: 'May, 2015',
+          end: 'August, 2015'
+        },
+        bullets: [
+          'Wrote e2e testing system from scratch using Selenium and MochaJS',
+          'Encorporated automated tests in CI pipeline'
         ]
       }
     ];
