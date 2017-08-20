@@ -128,6 +128,7 @@ nav-bar {
   background-color: rgba(44,62,80, 0.8);
   margin-left: 16px;
   margin-right: 16px;
+  margin-top: 16px;
 }
 
 .nav-buttons-container {
@@ -185,6 +186,22 @@ nav-bar {
 
 .content-container-content {
   color: white;
+}
+
+.content-container-content {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-style: normal;
+  font-variant: normal;
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.content-container-content h2 {
+  font-size: 32px;
+}
+
+.content-container-content p {
+  font-size: 24px;
 }
 
 .container-shadow {
