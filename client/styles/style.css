@@ -281,3 +281,15 @@ nav-bar {
 .bullet-item {
   padding-bottom: 4px;
 }
+
+.language-item {
+  display: flex;
+}
+
+.language-icon {
+}
+
+.icon-sm {
+  height: 50px;
+  width: 50px;
+}

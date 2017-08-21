@@ -8,6 +8,17 @@
   function SkillsController() {
     var vm = this;
 
-    vm.test = 'skills view';
+    var baseImgUrl = '../client/assets/lang_icons/';
+
+    vm.languages = [
+      {
+        name: 'Java',
+        imgUrl: `${baseImgUrl}java.png`
+      },
+      {
+        name: 'Python',
+        imgUrl: `${baseImgUrl}python.png`
+      }
+    ];
   };
 })();

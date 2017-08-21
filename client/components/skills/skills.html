@@ -1,3 +1,10 @@
 <div class="content-inner-container">
-  <p class="content-container-content">{{vm.test}}</p>
+  <div class="languages-list">
+    <div ng-repeat="lang in vm.languages" class="language-item">
+      <div class="language-icon">
+        <img src="{{lang.imgUrl}}" class="icon icon-sm">
+      </div>
+      <div>{{lang.name}}</div>
+    </div>
+  </div>
 </div>
