@@ -1,13 +1,43 @@
 <div class="content-inner-container">
   <div class="icon-grid">
-    <div class="icon-grid-item">
-      <div class="icon-grid-item-heading">Language</div>
+    <div class="icon-grid-column">
+      <div class="icon-grid-item-heading">
+        <div class="column-header">Languages</div>
+        <div ng-repeat="lang in vm.languages" class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">{{lang.name}}</div>
+        </div>
+      </div>
     </div>
-    <div class="icon-grid-item">
-      <div class="icon-grid-item-heading">Frameworks</div>
+    <div class="icon-grid-column">
+      <div class="icon-grid-item-heading">
+        <div class="column-header">Frameworks</div>
+        <div class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">Python</div>
+        </div>
+        <div class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">Python</div>
+        </div>
+        <div class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">Python</div>
+        </div>
+      </div>
     </div>
-    <div class="icon-grid-item">
-      <div class="icon-grid-item-heading">Tools</div>
+    <div class="icon-grid-column">
+      <div class="icon-grid-item-heading">
+        <div class="column-header">Tools</div>
+        <div class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">Python</div>
+        </div>
+        <div class="column-item">
+          <div class="icon-img icon-sm"></div>
+          <div class="icon-name">Python</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
