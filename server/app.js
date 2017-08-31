@@ -7,13 +7,13 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../client/')));
+app.use(express.static(path.join(__dirname, '../src/')));
 app.use(express.static('./'));
-app.use(favicon(path.join(__dirname, '../client/assets', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, '../src/assets', 'favicon.ico')));
 app.use(morgan('dev'));
 
 app.all('/*', function(req, res) {
-  res.sendFile('index.html', { root: path.join(__dirname, '../client') });
+  res.sendFile('index.html', { root: path.join(__dirname, '../src') });
 })
 
 app.listen(3000, function() {
