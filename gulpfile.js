@@ -66,10 +66,10 @@ gulp.task('angular-annotate', function() {
 
 gulp.task('useref', function() {
   return gulp.src('src/*.html')
-    .pipe(useref())
+    .pipe(useref())  // concat app js files
     .pipe(changed('*.js'))
-    .pipe(gulpIf('*.js', ngAnnotate()))
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('*.js', ngAnnotate()))  // annotate angular js
+    .pipe(gulpIf('*.js', uglify()))  // minify app js files
     .pipe(gulp.dest('dist'));
 });
 
