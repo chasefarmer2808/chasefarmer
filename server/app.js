@@ -7,15 +7,23 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../src/')));
+const port = 8080;
+
+var appDir = 'src';
+
+if (process.env.NODE_ENV == 'production') {
+  appDir = 'dist';
+}
+
+app.use(express.static(path.join(__dirname, `../${appDir}/`)));
 app.use(express.static('./'));
 app.use(favicon(path.join(__dirname, '../src/assets', 'favicon.ico')));
 app.use(morgan('dev'));
 
 app.all('/*', function(req, res) {
-  res.sendFile('index.html', { root: path.join(__dirname, '../src') });
+  res.sendFile('index.html', { root: path.join(__dirname, `../${appDir}`) });
 })
 
-app.listen(3000, function() {
-  console.log('listening on 3000');
+app.listen(port, function() {
+  console.log(`Listening on ${port}`);
 });
