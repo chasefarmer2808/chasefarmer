@@ -1,4 +1,4 @@
 module.exports = {
   hostname: '',
-  port: 80
+  port: process.env.PORT
 };
