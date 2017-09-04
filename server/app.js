@@ -4,6 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const favicon = require('serve-favicon');
 const path = require('path');
+const config = require('./config');
 
 const app = express();
 
@@ -16,6 +17,6 @@ app.all('/*', function(req, res) {
   res.sendFile('index.html', { root: path.join(__dirname, '../client') });
 })
 
-app.listen(3000, function() {
-  console.log('listening on 3000');
+app.listen(config.port, '0.0.0.0', function() {
+  console.log(`listening at port ${config.port}`);
 });
