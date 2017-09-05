@@ -9,10 +9,11 @@ var del = require('del');  // deletes auto generated files
 var runSequence = require('run-sequence');  // allows gulp to run tasks sequentially instead of parallel
 var changed = require('gulp-changed');  // tells gulp to only compile changed files
 var nodemon = require('gulp-nodemon');  // allows gulp to run the node server with nodemon
-var ngAnnotate = require('gulp-ng-annotate');
+var ngAnnotate = require('gulp-ng-annotate');  // renames vars in angular code for minification compatability
+var sourcemaps = require('gulp-sourcemaps');  // better css debugging in browser dev tools
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', [ 'useref', 'images'], callback);
+  runSequence('clean:dist', [ 'useref', 'images', 'css'], callback);
 });
 
 gulp.task('default', ['browserSync', 'set-dev-node-env'], function() {
@@ -70,6 +71,13 @@ gulp.task('useref', function() {
     .pipe(changed('*.js'))
     .pipe(gulpIf('*.js', ngAnnotate()))  // annotate angular js
     .pipe(gulpIf('*.js', uglify()))  // minify app js files
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('css', function() {
+  return gulp.src('src/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'));
 });
 
