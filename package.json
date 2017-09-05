@@ -9,6 +9,9 @@
     "serve": "nodemon dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "0.12.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chasefarmer2808/chasefarmer.git"
