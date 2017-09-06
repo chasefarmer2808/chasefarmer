@@ -71,6 +71,7 @@ gulp.task('useref', function() {
     .pipe(changed('*.js'))
     .pipe(gulpIf('*.js', ngAnnotate()))  // annotate angular js
     .pipe(gulpIf('*.js', uglify()))  // minify app js files
+    .pipe(gulpIf('*.css', cleanCSS({compatability: 'ie8'})))  // minify css
     .pipe(gulp.dest('dist'));
 });
 
