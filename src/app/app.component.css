@@ -1,0 +1,7 @@
+.img-circle {
+    width: var(--mobile-sq-img-dim);
+    height: var(--mobile-sq-img-dim);
+    background-size: cover;
+    display: block;
+    border-radius: calc(var(--mobile-sq-img-dim) / 2)
+}
